@@ -6,15 +6,18 @@ let somma = 0;
 let perQuanteVolte = 5;
 
 // For
-// for (let i = 0; i < perQuanteVolte; i++) {
-//     let num;
-//     do num = parseInt(prompt("Inserisci numero:"));
-//     while (isNaN(num));
-//     somma += num;
-// }
+for (let i = 0; i < perQuanteVolte; i++) {
+    let num;
+    do num = parseInt(prompt("Inserisci numero:"));
+    while (isNaN(num));
+    somma += num;
+}
+
+alert("Totale: " + somma)
 
 // While
 let cont = 0;
+somma = 0;
 
 while (cont < perQuanteVolte) {
     let num;
