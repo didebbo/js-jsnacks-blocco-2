@@ -17,6 +17,7 @@ invitati.forEach((invitato) => {
     log += " " + invitato + ",";
 })
 
+log = log.slice(0, -1);
 alert(log);
 
 
