@@ -13,7 +13,7 @@ for (let i = 0; i < perQuanteVolte; i++) {
     somma += num;
 }
 
-alert("Totale: " + somma)
+alert("Totale For: " + somma)
 
 // While
 let cont = 0;
@@ -27,4 +27,4 @@ while (cont < perQuanteVolte) {
     cont++;
 }
 
-alert("Totale: " + somma)
+alert("Totale While: " + somma)
