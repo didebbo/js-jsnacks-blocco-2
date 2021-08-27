@@ -12,20 +12,28 @@ for (let i = 0; i < quantiInvitati; i++) {
     do {
         exist = false;
         nome = nomi[Math.floor(Math.random() * nomi.length)];
-        cognome = cognomi[Math.floor(Math.random() * cognomi.length)];
         invitati.forEach((el) => {
-            if (el.includes(nome) || el.includes(cognome)) exist = true;
+            if (el.includes(nome)) exist = true;
         })
     }
     while (exist);
+    do {
+        exist = false;
+        cognome = cognomi[Math.floor(Math.random() * cognomi.length)];
+        invitati.forEach((el) => {
+            if (el.includes(cognome)) exist = true;
+        })
+    }
+    while (exist);
+
     invitati.push(nome + " " + cognome);
 }
 
 invitati.forEach((invitato) => {
     log += " " + invitato + ",";
 })
-
 log = log.slice(0, -1);
+
 alert(log);
 
 
