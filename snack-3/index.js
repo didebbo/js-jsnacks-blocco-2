@@ -14,7 +14,7 @@ for (let i = 0; i < quantiInvitati; i++) {
 }
 
 invitati.forEach((invitato) => {
-    log += " " + invitato;
+    log += " " + invitato + ",";
 })
 
 alert(log);
