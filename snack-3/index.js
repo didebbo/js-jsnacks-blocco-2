@@ -8,8 +8,16 @@ const quantiInvitati = 3;
 let log = "Gli invitati sono:";
 
 for (let i = 0; i < quantiInvitati; i++) {
-    let nome = nomi[Math.floor(Math.random() * nomi.length)];
-    let cognome = cognomi[Math.floor(Math.random() * cognomi.length)];
+    let exist, nome, cognome;
+    do {
+        exist = false;
+        nome = nomi[Math.floor(Math.random() * nomi.length)];
+        cognome = cognomi[Math.floor(Math.random() * cognomi.length)];
+        invitati.forEach((el) => {
+            if (el.includes(nome) || el.includes(cognome)) exist = true;
+        })
+    }
+    while (exist);
     invitati.push(nome + " " + cognome);
 }
 
