@@ -19,9 +19,8 @@ log += "Array 1: " + array1;
 log += "\nArray 2: " + array2;
 
 if (array1.length < array2.length) {
-    let differenza = array2.length - array1.length;
     log += "\nAggiungo ad Array 1 questi elementi:";
-    for (i = 0; i < differenza; i++) {
+    while (array1.length < array2.length) {
         let num = Math.floor(Math.random() * rangeNumber) + 1;
         array1.push(num);
         log += " " + num + ",";
@@ -31,9 +30,8 @@ if (array1.length < array2.length) {
     log += "\nArray 2: " + array2;
 }
 else if (array2.length < array1.length) {
-    let differenza = array1.length - array2.length;
     log += "\nAggiungo ad Array 2 questi elementi:";
-    for (i = 0; i < differenza; i++) {
+    while (array2.length < array1.length) {
         let num = Math.floor(Math.random() * rangeNumber) + 1;
         array2.push(num);
         log += " " + num + ",";
