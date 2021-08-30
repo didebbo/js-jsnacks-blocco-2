@@ -3,15 +3,17 @@
 // fino a quando ne avrà tanti quanti l’altro.
 
 const rangeArray = 20;
+const lenghtArray1 = Math.floor((Math.random() * rangeArray) + 1);
+const lenghtArray2 = Math.floor((Math.random() * rangeArray) + 1);
 const rangeNumber = 100;
 const array1 = [];
 const array2 = [];
 let log = "";
 
 
-for (let i = 0; i < Math.floor((Math.random() * rangeArray) + 1); i++) array1.push(Math.floor(Math.random() * rangeNumber) + 1);
+for (let i = 0; i < lenghtArray1; i++) array1.push(Math.floor(Math.random() * rangeNumber) + 1);
 
-for (let i = 0; i < Math.floor((Math.random() * rangeArray) + 1); i++) array2.push(Math.floor(Math.random() * rangeNumber) + 1);
+for (let i = 0; i < lenghtArray2; i++) array2.push(Math.floor(Math.random() * rangeNumber) + 1);
 
 log += "Array 1: " + array1;
 log += "\nArray 2: " + array2;
